@@ -1,0 +1,33 @@
+{
+  "name": "autoflow",
+  "version": "0.0.1",
+  "description": "Autoflow CICD flow with UI testing using cucumberJS and tools to provide a workflow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raserrano/autoflow.git"
+  },
+  "keywords": [
+    "automation",
+    "cicd",
+    "workflow",
+    "test"
+  ],
+  "author": "raserrano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raserrano/autoflow/issues"
+  },
+  "homepage": "https://github.com/raserrano/autoflow#readme",
+  "devDependencies": {
+    "husky": "^4.3.8"
+  },
+  "husky": {
+    "hooks":{
+    	"pre-commit": "npm test"
+    }
+  }
+}
